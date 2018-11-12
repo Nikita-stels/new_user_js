@@ -1,0 +1,94 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    
+
+  </head>
+
+   	<div class="form-group form-control-sm row" >
+    	<label class="col-sm-2 col-form-label">Наименование организации</label>
+		<div class="col-sm-10">
+    		<select name="zak" id="zak" class="form-control" value="ООО Ромашка">
+				<option value="new">Новый контакт</option>
+				<option value="1"> ООО Копыта</option>
+
+			</select>
+<div id="new_user">
+	<div class="form-group form-control-sm row" >
+    	<label class="col-sm-2 col-form-label">Организация</label>
+	<div class="col-sm-10">
+    	<input type="text" name="info" class="form-control" id="n_org_name">
+	</div>
+</div>
+<div class="form-group form-control-sm row" >
+    	<label class="col-sm-2 col-form-label">Контакт</label>
+	<div class="col-sm-10">
+    	<input type="text" name="info" class="form-control" id="n_kont_fio">
+	</div>
+</div>
+<div class="form-group form-control-sm row" >
+    	<label class="col-sm-2 col-form-label">Контактная информация</label>
+	<div class="col-sm-10">
+    	<input type="text" name="info" class="form-control" id="n_infouser">
+	</div>
+</div>
+<div class="form-group form-control-sm row" >
+<a class="btn btn-success btn-lg" id="save_new_user"  role="button">Сохранить</a>
+<a class="btn btn-secondary btn-lg" id="cancal_new_user" role="button">Отменить</a>
+</div>
+</div> <!-- end new_user -->
+		</div>
+	</div>
+
+<div class="form-group form-control-sm row" >
+    <label class="col-sm-2 col-form-label">Контакт</label>
+	<div class="col-sm-10">
+    	<select name="kontakt" id="kontakt" class="form-control" value="Иванов И.И.">
+			<option value="0">Петров И.К.</option>
+			<option value="1">Сидоров И.И.</option>
+
+		</select>
+	</div>
+</div>
+
+	<div class="form-group form-control-sm row" >
+    	<label class="col-sm-2 col-form-label">Информация</label>
+	<div class="col-sm-10">
+    	<input type="text" name="info" class="form-control" id="infokontakt">
+	</div>
+</div>
+
+<hr>  
+
+<form id="form" method="POST">
+	<div class="form-group form-control-sm">
+    <input type="file" name="userfile" class="form-control-file" id="userfile">
+    <input type="submit" class="form-control btn btn-primary" value="Загрузить">
+</div>
+</form>
+
+<!-- Количество загруженных байт -->
+<p id="uploaded"></p>
+
+<!-- Прогресс-бар -->
+<p><progress max="100" value="0" id="progress"></progress></p>
+
+<!-- Результат загрузки файла -->
+<p id="result"></p>
+
+
+
+</body>
+
+<script src="new_user.js"></script>
+</html>

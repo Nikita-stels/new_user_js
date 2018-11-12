@@ -1,0 +1,30 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./load.js"></script>
+
+  </head>
+
+
+
+<form id="form" method="POST">
+    <input type="file" name="userfile" id="userfile">
+    <input type="submit" value="Загрузить">
+</form>
+
+<!-- Количество загруженных байт -->
+<p id="uploaded"></p>
+
+<!-- Прогресс-бар -->
+<p><progress max="100" value="0" id="progress"></progress></p>
+
+<!-- Результат загрузки файла -->
+<p id="result"></p>
+</body>
+</html>
